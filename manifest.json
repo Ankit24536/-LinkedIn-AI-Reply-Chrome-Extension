@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn AI Reply Extension",
+  "description": "A Chrome extension that uses AI to generate replies for LinkedIn messages.",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.ts"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://www.linkedin.com/feed/"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/feed/"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.plasmo.png",
+      "32":"icon.plasmo.png"
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}
